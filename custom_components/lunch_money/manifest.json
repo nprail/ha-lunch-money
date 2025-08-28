@@ -3,10 +3,7 @@
     "name": "Lunch Money",
     "version": "0.1.0",
     "documentation": "https://github.com/nprail/ha-lunch-money",
-    "requirements": [
-        "aiohttp==3.8.0",
-        "voluptuous==0.13.1"
-    ],
+    "requirements": [],
     "dependencies": [],
     "codeowners": [
         "@nprail"
