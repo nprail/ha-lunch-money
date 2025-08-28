@@ -18,6 +18,9 @@ class LunchMoneyAPI:
                 # Group assets by type_name and sum their balances
                 grouped = {}
                 for asset in data.get("assets", []):
+                    # Ignore closed assets
+                    if asset.get("closed_on"):
+                        continue
                     type_name = asset.get("type_name", "Other")
                     balance = asset.get("balance", 0)
                     try:
