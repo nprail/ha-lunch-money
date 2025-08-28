@@ -1,14 +1,17 @@
 {
-  "domain": "lunch_money",
-  "name": "Lunch Money",
-  "version": "0.1.0",
-  "documentation": "https://lunchmoney.dev/",
-  "requirements": [
-    "aiohttp==3.8.0",
-    "voluptuous==0.13.1"
-  ],
-  "dependencies": [],
-  "codeowners": ["@your-github-username"],
-  "iot_class": "cloud_polling",
-  "integration_type": "service"
+    "domain": "lunch_money",
+    "name": "Lunch Money",
+    "version": "0.1.0",
+    "documentation": "https://github.com/nprail/ha-lunch-money",
+    "requirements": [
+        "aiohttp==3.8.0",
+        "voluptuous==0.13.1"
+    ],
+    "dependencies": [],
+    "codeowners": [
+        "@nprail"
+    ],
+    "config_flow": true,
+    "iot_class": "cloud_polling",
+    "integration_type": "service"
 }
