@@ -1,0 +1,28 @@
+# Home Assistant
+__pycache__/
+*.pyc
+*.pyo
+*.db
+*.log
+*.sqlite3
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+.env
+.venv/
+venv/
+ENV/
+build/
+dist/
+.eggs/
+*.egg-info/
+
+# HACS
+/custom_components/lunch_money/.translations.json
+/custom_components/lunch_money/translations/*.tmp

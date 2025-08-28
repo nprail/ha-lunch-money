@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Lunch Money",
+        "description": "Enter your Lunch Money API key.",
+        "data": {
+          "api_key": "API Key"
+        }
+      }
+    }
+  }
+}
