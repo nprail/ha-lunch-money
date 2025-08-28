@@ -8,9 +8,7 @@ async def async_setup_entry(hass, entry):
     """Set up Lunch Money from a config entry."""
     api_key = entry.data["api_key"]
     hass.data.setdefault(DOMAIN, {})[entry.entry_id] = {"api": LunchMoneyAPI(api_key)}
-    hass.async_create_task(
-        hass.config_entries.async_forward_entry_setup(entry, "sensor")
-    )
+    await hass.config_entries.async_forward_entry_setup(entry, "sensor")
     return True
 
 async def async_unload_entry(hass, entry):
