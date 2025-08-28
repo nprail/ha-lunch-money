@@ -38,6 +38,8 @@ class LunchMoneyAPI:
                     if account.get("status") == "inactive":
                         continue
                     type_name = account.get("type", "Other")
+                    if type_name == "depository":
+                        type_name = "cash"
                     balance = account.get("to_base", 0)
                     try:
                         balance = float(balance)
