@@ -22,6 +22,8 @@ class LunchMoneyAPI:
                     if asset.get("closed_on"):
                         continue
                     type_name = asset.get("type_name", "Other")
+                    # Capitalize the first letter of each word
+                    type_name = type_name.title()
                     balance = asset.get("to_base", 0)
                     try:
                         balance = float(balance)
@@ -40,6 +42,8 @@ class LunchMoneyAPI:
                     type_name = account.get("type", "Other")
                     if type_name == "depository":
                         type_name = "cash"
+                    # Capitalize the first letter of each word
+                    type_name = type_name.title()
                     balance = account.get("to_base", 0)
                     try:
                         balance = float(balance)
