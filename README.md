@@ -4,32 +4,20 @@ This custom integration exposes your Lunch Money asset types (e.g., Cash, Credit
 
 ## Installation
 
+### HACS (Recommended)
+
+1. Go to **HACS > Integrations** in your Home Assistant UI.
+2. Click the three dots in the top right and select **Custom repositories**.
+3. Add this repository's URL and select **Integration** as the category.
+4. Search for "Lunch Money" in HACS and install the integration.
+5. Restart Home Assistant.
+6. Go to **Settings > Devices & Services > Add Integration** and search for "Lunch Money".
+7. Enter your Lunch Money API key when prompted.
+
+### Manual
+
 1. Copy the `lunch_money` folder into your Home Assistant `custom_components` directory:
    - Example: `/config/custom_components/lunch_money`
-2. Install dependencies:
-   - Add to your Home Assistant `requirements.txt` (if using a custom venv):
-     ```
-     aiohttp
-     voluptuous
-     ```
-   - Or install via pip:
-     ```sh
-     pip install aiohttp voluptuous
-     ```
-3. Restart Home Assistant.
-4. In Home Assistant UI, go to **Settings > Devices & Services > Add Integration** and search for "Lunch Money".
-5. Enter your Lunch Money API key when prompted.
-
-## Testing
-
-1. After setup, go to **Developer Tools > States** in Home Assistant.
-2. Search for entities starting with `sensor.lunch_money_`.
-3. Each asset type from your Lunch Money account will appear as a sensor entity (e.g., `sensor.lunch_money_cash`, `sensor.lunch_money_credit`).
-4. Confirm that the values match your Lunch Money dashboard.
-
-## Troubleshooting
-- Check Home Assistant logs for errors related to `lunch_money`.
-- Ensure your API key is correct and has access to the `/assets` endpoint.
-
-## Reference
-- [Lunch Money API Docs](https://lunchmoney.dev/)
+2. Restart Home Assistant.
+3. In Home Assistant UI, go to **Settings > Devices & Services > Add Integration** and search for "Lunch Money".
+4. Enter your Lunch Money API key when prompted.
