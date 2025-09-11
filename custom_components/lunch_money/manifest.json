@@ -3,6 +3,7 @@
     "name": "Lunch Money",
     "version": "0.1.0",
     "documentation": "https://github.com/nprail/ha-lunch-money",
+    "issue_tracker": "https://github.com/nprail/ha-lunch-money/issues",
     "requirements": [],
     "dependencies": [],
     "codeowners": [
