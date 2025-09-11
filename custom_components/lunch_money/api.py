@@ -37,7 +37,7 @@ class LunchMoneyAPI:
                 plaid_data = await resp.json()
                 for account in plaid_data.get("plaid_accounts", []):
                     # Ignore accounts with status 'inactive', 'not supported', or 'not found'
-                    if account.get("status") in ("inactive", "not supported", "not found"):
+                    if account.get("status") in ("inactive", "not supported", "not found", "closed"):
                         continue
                     type_name = account.get("type", "Other")
                     if type_name == "depository":
